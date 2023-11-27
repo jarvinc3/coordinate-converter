@@ -28,18 +28,77 @@ function App() {
   };
 
   return (
-    < div className="container">
-      <section className="card">
-        <input type="number" value={value1} onChange={handleInputChange1} />
-        <input type="number" value={value2} onChange={handleInputChange2} />
-      </section>
-      <section className="card">
-        <button onClick={calculate}>Converter</button>
-      </section>
-      <section className="card">
-        <p>{result1}</p>
-        <p>{result2}</p>
-      </section>
+    <div className="principal">
+      <nav>
+        <h1>Convertidor <br /> decoordenadas</h1>
+        <ul>
+          <li>Overworld a nether</li>
+          <li>Nether a overworld</li>
+        </ul>
+      </nav>
+      <div className="container">
+        <section className="">
+          <div className="input-container">
+            <img
+              width="24"
+              height="24"
+              src="https://img.icons8.com/material-two-tone/24/x-coordinate.png"
+              alt="x-coordinate"
+            />
+            <input
+              type="number"
+              value={value1}
+              onChange={handleInputChange1}
+              className="input"
+            />
+          </div>
+          <div className="input-container">
+            <img
+              width="24"
+              height="24"
+              src="https://img.icons8.com/material-two-tone/24/z-coordinate.png"
+              alt="z-coordinate"
+            />
+            <input
+              type="number"
+              value={value2}
+              onChange={handleInputChange2}
+              className="input"
+            />
+          </div>
+        </section>
+        <section className="">
+          <button onClick={calculate}>Convertir</button>
+        </section>
+        <section className="">
+          <div className="card">
+            <div className="img">
+              <img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material-two-tone/24/x-coordinate.png"
+                alt="x-coordinate"
+              />
+            </div>
+            <div className="textBox">
+              <span className="span">{result1}</span>
+            </div>
+          </div>
+          <div className="card">
+            <div className="img">
+              <img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material-two-tone/24/z-coordinate.png"
+                alt="z-coordinate"
+              />
+            </div>
+            <div className="textBox">
+              <span className="span">{result2}</span>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }
