@@ -15,7 +15,7 @@ export default function Overworld() {
     <div className="container overworld">
         <div className="like-dislike-container">
           <p className="text-content">Ingresa las coordenadas del overworld:</p>
-          <div className="icons-box">
+          <div className="icons-box gap">
             <div className="icons">
               X:
               <label className="btn-label">
@@ -43,10 +43,10 @@ export default function Overworld() {
           </div>
         </div>
         <section className="">
-          <button onClick={calculate}>Convertir</button>
+          <button className="buttonC" onClick={calculate}>Convertir</button>
         </section>
         <div className="like-dislike-container">
-          <p className="text-content">Tus coordenadas de el overworld <br />En el nether son:</p>
+          <p className="text-content">Tus coordenadas en el nether son:</p>
           <div className="icons-box">
             <div className="icons">
               X:
